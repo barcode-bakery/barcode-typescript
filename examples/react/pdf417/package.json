@@ -1,0 +1,38 @@
+{
+  "name": "barcode-bakery-example-react-pdf417",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Example on how to use Barcode Bakery for generating QRCode barcodes on react clients.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barcode-bakery/barcode-typescript",
+    "directory": "examples/react/qrcode"
+  },
+  "homepage": "https://www.barcodebakery.com",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@barcode-bakery/barcode-react-common": "^1",
+    "@barcode-bakery/barcode-react-pdf417": "^1",
+    "@barcode-bakery/barcode-common": "^3",
+    "@barcode-bakery/barcode-pdf417": "^2",
+    "next": "14.2.2",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.2",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
