@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "outDir": "./dist",
+    "lib": ["es2020", "DOM"],
+    "types": ["node"],
+    "moduleResolution": "NodeNext",
+    "sourceMap": true,
+    "declaration": true,
+    "useDefineForClassFields": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "NodeNext",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "include": ["**/*.ts", "**/*.js"],
+  "exclude": ["node_modules"]
+}

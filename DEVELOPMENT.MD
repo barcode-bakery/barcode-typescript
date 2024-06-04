@@ -31,4 +31,4 @@ Run a node JS example
 `node src\app-codabar.js`
 
 Run a node TS example
-`tsx src\app-codabar.ts`
+`tsx ts\app-codabar.ts`
