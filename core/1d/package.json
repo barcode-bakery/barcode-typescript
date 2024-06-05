@@ -1,6 +1,6 @@
 {
   "name": "@barcode-bakery/barcode-1d",
-  "version": "3.0.0-alpha.12",
+  "version": "3.0.0",
   "description": "Generates 1D barcodes.",
   "type": "module",
   "repository": {

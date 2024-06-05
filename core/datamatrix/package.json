@@ -1,6 +1,6 @@
 {
   "name": "@barcode-bakery/barcode-datamatrix",
-  "version": "2.0.0-alpha.1",
+  "version": "2.0.0",
   "description": "Generates DataMatrix barcodes.",
   "type": "module",
   "repository": {

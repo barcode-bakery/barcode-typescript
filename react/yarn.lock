@@ -216,57 +216,57 @@
     to-fast-properties "^2.0.0"
 
 "@barcode-bakery/barcode-1d@^3":
-  version "3.0.0-alpha.12"
-  resolved "https://registry.yarnpkg.com/@barcode-bakery/barcode-1d/-/barcode-1d-3.0.0-alpha.12.tgz#c84eb7f695ed1236b6013fc3d997213dcc649d3d"
-  integrity sha512-PT41fHUKtrjvIh5E9PTnXf4Y+/rlQNoP1gSjWM9VX2ymie8WkZ2qwOi8GTo89IidcnuLG4tu66puXPss1Qybhw==
-  dependencies:
-    "@barcode-bakery/barcode-common" "3.0.0-alpha.7"
-
-"@barcode-bakery/barcode-aztec@^2":
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@barcode-bakery/barcode-aztec/-/barcode-aztec-2.0.0-alpha.1.tgz#8e512cc9d4c58753a770a38233f69448c8215046"
-  integrity sha512-A3oXlMkrSXnEG2I3pAPlXizqAOXOenrktNg0J/NNZ8/Wy3X26oAeswiz3tfQJ0tnlbeI/HcbQsprigKPyu88RQ==
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@barcode-bakery/barcode-1d/-/barcode-1d-3.0.0.tgz#f9568860569bcd1febba20f94ab5ea99c1f5e8fc"
+  integrity sha512-feovui9gH/YlZ5Y+FP2P3J6b/UHxVeYrU/CrmSaYipYQDHpHIEXG+dwvgsZe1J9YNLlqhB9rWcqizUeNfOXekg==
   dependencies:
     "@barcode-bakery/barcode-common" "^3"
 
-"@barcode-bakery/barcode-common@3.0.0-alpha.7", "@barcode-bakery/barcode-common@^3":
-  version "3.0.0-alpha.7"
-  resolved "https://registry.yarnpkg.com/@barcode-bakery/barcode-common/-/barcode-common-3.0.0-alpha.7.tgz#183fe30008655e6faeb169e0d39fd17d9e459d9c"
-  integrity sha512-ie0o4qK1QqUaVwiFqMZBKpwdxlKEbD0JlW5OUiq5OY3o1CVKtVUVEJoxT5TFozc/dzSfxjJ4+Mp13Zc872qsew==
+"@barcode-bakery/barcode-aztec@^2":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@barcode-bakery/barcode-aztec/-/barcode-aztec-2.0.0.tgz#43f8093ac66f6ad18e1ca2fa68cc386b09f473aa"
+  integrity sha512-QP6lU6N+mBNfDIr1CorWEAUaIxvuoKqJAq8WtV+4IsHbGkyHjlArdconr8zrMJ9mCrKB0jMHt3Zh3VHuXuEGJQ==
+  dependencies:
+    "@barcode-bakery/barcode-common" "^3"
+
+"@barcode-bakery/barcode-common@^3":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@barcode-bakery/barcode-common/-/barcode-common-3.0.0.tgz#dd480fc1997ecdaabb43fef3b0a897483ca2e751"
+  integrity sha512-WFKrNJ/WsA8Z757Ek+nNuYpNIe5+NfnMuDZmP5zP5UeqyeNeu+xh4rChxAJMehEKHbXxd2TOS9nAPN2oSRmXbA==
 
 "@barcode-bakery/barcode-databarexpanded@^2":
-  version "2.0.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/@barcode-bakery/barcode-databarexpanded/-/barcode-databarexpanded-2.0.0-alpha.2.tgz#9b999212fe1c62cb93e50cf45818a7fae52c8c5f"
-  integrity sha512-kcqtSmbumsH8jHi3RPOdWJdck5RVn26SR0JCKHFdVRRxbkcBvcGPF3J/jbKo8p3FbsRNmbm8FXBxU97LPrEsRg==
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@barcode-bakery/barcode-databarexpanded/-/barcode-databarexpanded-2.0.0.tgz#a7095c284a407f8004f6893fd766e39838af3e91"
+  integrity sha512-mEvkkZ4BQYDVeuNo5cblVkjcZL0GVL0Q9hBLK+Engv9M4UH555ofYPhpSkHjhbKYxUELLhNjm6Rz7XicHaNQ2g==
   dependencies:
     "@barcode-bakery/barcode-common" "^3"
 
 "@barcode-bakery/barcode-datamatrix@^2":
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@barcode-bakery/barcode-datamatrix/-/barcode-datamatrix-2.0.0-alpha.1.tgz#da2e453e86879e4eb046673a6dd5bb5dfde8eb1a"
-  integrity sha512-6du76cwRj+xfy//iguv6Jh2vu6lOTt7X9/STx2lEaGBclZxUlkWUfCXa2+kPjBNqtezIXvc2OvME1pQEwvBYSg==
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@barcode-bakery/barcode-datamatrix/-/barcode-datamatrix-2.0.0.tgz#05cb33741ba258f87b86de7c7b58bccec805f7e0"
+  integrity sha512-6r2JLz0dsw8gvXKNR0uloGhyO/yJAr4YijuAYL/BeP6d5cMXjn0j/cvOCIxFxoaxnKHrQoTSAuwjEwzolPKyFA==
   dependencies:
     "@barcode-bakery/barcode-common" "^3"
 
 "@barcode-bakery/barcode-maxicode@^2":
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@barcode-bakery/barcode-maxicode/-/barcode-maxicode-2.0.0-alpha.1.tgz#2a351e350eaca1c1b4f4753dd16ff8cefca133ef"
-  integrity sha512-yTtSygXcSqrl6G0PynJWLQ/75D+ZbwjJC3bOGiP/uXSq6omKFNxH4dMwgToC4nagkzM7oJ4yr2LyO2hDLTXJ2A==
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@barcode-bakery/barcode-maxicode/-/barcode-maxicode-2.0.0.tgz#34eb5620b06118b1319090a661dcd959cca8ddfd"
+  integrity sha512-yncd7yYrPPQkiR+nkWcwo7GgeGGYlG7udn0OCs8hGMYYkkuw+qr/MF2sDGA+wXm2jYvn+zqRCfDkZAgZ/ywjow==
   dependencies:
     "@barcode-bakery/barcode-common" "^3"
 
 "@barcode-bakery/barcode-pdf417@^2":
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@barcode-bakery/barcode-pdf417/-/barcode-pdf417-2.0.0-alpha.1.tgz#c35fec9f7da878eb3a01ef397e2da4610ccf56d0"
-  integrity sha512-wScUg+SuIvODUYDfkQHzP55x+/FYSBpWHOZdn4aNtqRmFEhbaocPQe+kZ/Y5H4Ia4pxLoGn2Xopab1S5jijIbA==
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@barcode-bakery/barcode-pdf417/-/barcode-pdf417-2.0.0.tgz#0f2291168cc54e5dd645604516f9981bd77f3c94"
+  integrity sha512-+eH+3IkmWbvYq0TLfVFvGsTo7zn6ra9FplmZZorTc1qLSosUCfCRdN4XkzlLDwVtXvTw20KwoNWhaqIsA/WY7w==
   dependencies:
     "@barcode-bakery/barcode-common" "^3"
     big.js "^6.2.1"
 
 "@barcode-bakery/barcode-qrcode@^2":
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@barcode-bakery/barcode-qrcode/-/barcode-qrcode-2.0.0-alpha.1.tgz#cea72563f338c797208060bff9bebfe55c294b80"
-  integrity sha512-rZHz/WKR5HT6O+6QUsYwa8xW+esvc+/JWyeUOtprGs+3Qz5T7CNxTFxuZLr5OFxZhG3dObUp7IBP9y983+hVXw==
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@barcode-bakery/barcode-qrcode/-/barcode-qrcode-2.0.0.tgz#3a5fe826f3bb0ee7ca9cc78736fbb2236998f7ff"
+  integrity sha512-/XrzilNBMEEV0sco3P8tqngnUCn+VrjYWETQ2+QLDFHuQFn15p33MNXVG+39x/6YOiUuGNQBjPZFGXU2n+YgYQ==
   dependencies:
     "@barcode-bakery/barcode-common" "^3"
 

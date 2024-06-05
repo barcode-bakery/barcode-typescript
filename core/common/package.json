@@ -1,6 +1,6 @@
 {
   "name": "@barcode-bakery/barcode-common",
-  "version": "3.0.0-alpha.7",
+  "version": "3.0.0",
   "description": "Base code for generating barcode with the Barcode Bakery library. See @barcode-bakery/barcode-1d.",
   "type": "module",
   "repository": {

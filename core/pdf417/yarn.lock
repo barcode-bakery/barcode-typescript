@@ -298,8 +298,10 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
-"@barcode-bakery/barcode-common@../barcode-bakery-common/src":
-  version "0.0.0"
+"@barcode-bakery/barcode-common@^3":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@barcode-bakery/barcode-common/-/barcode-common-3.0.0.tgz#dd480fc1997ecdaabb43fef3b0a897483ca2e751"
+  integrity sha512-WFKrNJ/WsA8Z757Ek+nNuYpNIe5+NfnMuDZmP5zP5UeqyeNeu+xh4rChxAJMehEKHbXxd2TOS9nAPN2oSRmXbA==
 
 "@bcoe/v8-coverage@^0.2.3":
   version "0.2.3"

@@ -1,6 +1,6 @@
 {
   "name": "@barcode-bakery/barcode-nodejs",
-  "version": "1.0.0-alpha.6",
+  "version": "1.0.0",
   "description": "Base code for generating barcode with the Barcode Bakery library with Node. See barcode-bakery-1d.",
   "type": "module",
   "repository": {
@@ -14,9 +14,10 @@
     "email": "contact@barcodebakery.com"
   },
   "scripts": {
-    "prepublishOnly": "tsc",
-    "build": "tsc",
-    "lint": "eslint"
+    "prepublishOnly": "npm run clean && tsc",
+    "build": "npm run clean && tsc",
+    "lint": "eslint",
+    "clean": "rimraf ./dist"
   },
   "license": "CC-BY-ND-4.0",
   "files": [
@@ -79,6 +80,7 @@
     "eslint-plugin-react-hooks": "^4.6.1",
     "globals": "^15.0.0",
     "prettier": "^3.2.5",
+    "rimraf": "^5.0.7",
     "typescript": "^5"
   }
 }
