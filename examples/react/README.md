@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [Barcode Bakery](https://www.barcodebakery.com/) &middot; [![GitHub license](https://img.shields.io/badge/license-CC%20BY--ND-blue.svg)](https://creativecommons.org/licenses/by-nd/4.0/deed.en)
 
-## Getting Started
+<p align="center"><a href="https://www.barcodebakery.com" target="_blank">
+    <img src="https://www.barcodebakery.com/images/BCG-Logo-SQ-GitHub.svg">
+</a></p>
 
-First, run the development server:
+This example repository allows you to generate any type of 1D and 2D barcodes in React. You can find more information on our [Barcode Bakery website](https://www.barcodebakery.com).
+
+The TypeScript library is under the [Creative Commons Attribution-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nd/4.0/deed.en).
+
+Please consider doing a donation.
+
+## Installation
+
+- Run the following command:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+$ npm install @barcode-bakery/barcode-react
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+or
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+$ yarn add @barcode-bakery/barcode-react
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This repository is already setup to run the examples. You simply need to run:
 
-## Learn More
+```bash
+$ npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+You can follow our [developer's guide](https://www.barcodebakery.com/en/docs/react/guide) on our website to learn how to use our library.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Example
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```jsx
+import { BakeryCode128 } from '@barcode-bakery/barcode-react/1d';
 
-## Deploy on Vercel
+export default function Home() {
+  return <BakeryCode128 text="a123" thickness={30} scale={1} />;
+}
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### From this repository
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This repository is a Next.js project implementing all the barcodes.
+
+Run the following command and navigate to http://localhost:3000
+
+```bash
+yarn dev
+```
+
+Have a look at the file [1d/page.tsx](https://github.com/barcode-bakery/barcode-typescript/blob/master/examples/react/src/app/1d/page.tsx)
+
+## Supported types
+
+### 1D
+
+- [Codabar](https://www.barcodebakery.com/en/docs/react/barcode/codabar/api)
+- [Code 11](https://www.barcodebakery.com/en/docs/react/barcode/code11/api)
+- [Code 128](https://www.barcodebakery.com/en/docs/react/barcode/code128/api)
+- [Code 39](https://www.barcodebakery.com/en/docs/react/barcode/code39/api)
+- [Code 39 Extended](https://www.barcodebakery.com/en/docs/react/barcode/code39extended/api)
+- [Code 93](https://www.barcodebakery.com/en/docs/react/barcode/code93/api)
+- [EAN-13](https://www.barcodebakery.com/en/docs/react/barcode/ean13/api)
+- [EAN-8](https://www.barcodebakery.com/en/docs/react/barcode/ean8/api)
+- [Interleaved 2 of 5](https://www.barcodebakery.com/en/docs/react/barcode/i25/api)
+- [ISBN-10 / ISBN-13](https://www.barcodebakery.com/en/docs/react/barcode/isbn/api)
+- [MSI Plessey](https://www.barcodebakery.com/en/docs/react/barcode/msi/api)
+- [Other (Custom)](https://www.barcodebakery.com/en/docs/react/barcode/othercode/api)
+- [Standard 2 of 5](https://www.barcodebakery.com/en/docs/react/barcode/s25/api)
+- [UPC Extension 2](https://www.barcodebakery.com/en/docs/react/barcode/upcext2/api)
+- [UPC Extension 5](https://www.barcodebakery.com/en/docs/react/barcode/upcext5/api)
+- [UPC-A](https://www.barcodebakery.com/en/docs/react/barcode/upca/api)
+- [UPC-E](https://www.barcodebakery.com/en/docs/react/barcode/upce/api)
+
+### 2D
+
+- [Aztec](https://www.barcodebakery.com/en/docs/react/barcode/aztec/api)
+- [Databar Expanded](https://www.barcodebakery.com/en/docs/react/barcode/databarexpanded/api)
+- [DataMatrix](https://www.barcodebakery.com/en/docs/react/barcode/datamatrix/api)
+- [MaxiCode](https://www.barcodebakery.com/en/docs/react/barcode/maxicode/api)
+- [PDF417](https://www.barcodebakery.com/en/docs/react/barcode/pdf417/api)
+- [QRCode](https://www.barcodebakery.com/en/docs/react/barcode/qrcode/api)

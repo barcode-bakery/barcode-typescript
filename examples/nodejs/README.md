@@ -4,9 +4,7 @@
     <img src="https://www.barcodebakery.com/images/BCG-Logo-SQ-GitHub.svg">
 </a></p>
 
-This example repository allows you to generate any type of 1D barcodes. You can find more information on our [Barcode Bakery website](https://www.barcodebakery.com).
-
-This is based on the [barcode 1D](https://github.com/barcode-bakery/barcode-typescript/tree/master/ts/1d) library.
+This example repository allows you to generate any type of 1D and 2D barcodes in NodeJS. You can find more information on our [Barcode Bakery website](https://www.barcodebakery.com).
 
 The TypeScript library is under the [Creative Commons Attribution-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nd/4.0/deed.en).
 
