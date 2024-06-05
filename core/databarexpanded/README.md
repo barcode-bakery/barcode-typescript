@@ -17,10 +17,10 @@ Please consider doing a donation.
 This library is the base to generate barcodes.
 You should consider looking up the README based on the framework where you want to get this installed:
 
-- [React](https://github.com/barcode-bakery/barcode-typescript/tree/master/examples/react/databarexpanded)
-- [NodeJS](https://github.com/barcode-bakery/barcode-typescript/tree/master/examples/nodejs/databarexpanded)
+- [React](https://github.com/barcode-bakery/barcode-typescript/tree/master/react)
+- [NodeJS](https://github.com/barcode-bakery/barcode-typescript/tree/master/nodejs)
 
-You can follow our [developer's guide](https://www.barcodebakery.com/en/docs/nodejs/guide) on our website to learn how to use our library.
+You can follow our [developer's guide](https://www.barcodebakery.com/en/docs/react/guide) on our website to learn how to use our library.
 
 ## Tests
 
@@ -28,7 +28,7 @@ Simply type `yarn test` to run the tests.
 
 ## Supported types
 
-- Databar Expanded ([React](https://www.barcodebakery.com/en/docs/react/barcode/databarexpanded/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/databarexpanded/api))
+- QRCode ([React](https://www.barcodebakery.com/en/docs/react/barcode/qrcode/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/qrcode/api))
 
 ## Other libraries available
 
@@ -50,7 +50,7 @@ Simply type `yarn test` to run the tests.
 - UPC Extension 2 ([React](https://www.barcodebakery.com/en/docs/react/barcode/upcext2/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/upcext2/api))
 - UPC Extension 5 ([React](https://www.barcodebakery.com/en/docs/react/barcode/upcext5/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/upcext5/api))
 - Aztec ([React](https://www.barcodebakery.com/en/docs/react/barcode/aztec/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/aztec/api))
+- Databar Expanded ([React](https://www.barcodebakery.com/en/docs/react/barcode/databarexpanded/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/databarexpanded/api))
 - DataMatrix ([React](https://www.barcodebakery.com/en/docs/react/barcode/datamatrix/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/datamatrix/api))
 - MaxiCode ([React](https://www.barcodebakery.com/en/docs/react/barcode/maxicode/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/maxicode/api))
 - PDF417 ([React](https://www.barcodebakery.com/en/docs/react/barcode/pdf417/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/pdf417/api))
-- QRCode ([React](https://www.barcodebakery.com/en/docs/react/barcode/qrcode/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/qrcode/api))

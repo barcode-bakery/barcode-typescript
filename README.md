@@ -14,7 +14,7 @@ The TypeScript library includes:
 
 We support multiple types of symbologies:
 
-- **1D** ([React](https://github.com/barcode-bakery/barcode-typescript/tree/master/examples/react/1d), [NodeJS](https://github.com/barcode-bakery/barcode-typescript/tree/master/examples/nodejs/1d))
+- **1D**
   - Codabar
   - Code 11
   - Code 39
@@ -32,12 +32,12 @@ We support multiple types of symbologies:
   - UPC-E
   - UPC-E Extension 2
   - UPC-E Extension 5
-- **Aztec** ([React](https://github.com/barcode-bakery/barcode-typescript/tree/master/examples/react/aztec), [NodeJS](https://github.com/barcode-bakery/barcode-typescript/tree/master/examples/nodejs/aztec))
-- **Databar Expanded** ([React](https://github.com/barcode-bakery/barcode-typescript/tree/master/examples/react/databarexpanded), [NodeJS](https://github.com/barcode-bakery/barcode-typescript/tree/master/examples/nodejs/databarexpanded))
-- **DataMatrix** ([React](https://github.com/barcode-bakery/barcode-typescript/tree/master/examples/react/datamatrix), [NodeJS](https://github.com/barcode-bakery/barcode-typescript/tree/master/examples/nodejs/datamatrix))
-- **MaxiCode** ([React](https://github.com/barcode-bakery/barcode-typescript/tree/master/examples/react/maxicode), [NodeJS](https://github.com/barcode-bakery/barcode-typescript/tree/master/examples/nodejs/maxicode))
-- **PDF417** ([React](https://github.com/barcode-bakery/barcode-typescript/tree/master/examples/react/pdf417), [NodeJS](https://github.com/barcode-bakery/barcode-typescript/tree/master/examples/nodejs/pdf417))
-- **QRCode** ([React](https://github.com/barcode-bakery/barcode-typescript/tree/master/examples/react/qrcode), [NodeJS](https://github.com/barcode-bakery/barcode-typescript/tree/master/examples/nodejs/qrcode))
+- **Aztec**
+- **Databar Expanded**
+- **DataMatrix**
+- **MaxiCode**
+- **PDF417**
+- **QRCode**
 
 We also offer other programming languages such as [PHP](https://github.com/barcode-bakery/barcode-php-1d) and [.NET](https://github.com/barcode-bakery/barcode-dotnet-1d).
 
@@ -48,25 +48,36 @@ We also offer other programming languages such as [PHP](https://github.com/barco
 We are currently using a monorepo to handle all the packages. They are all pushed to NPM.
 Navigate to the correct code above or click on the language you would like to use to continue:
 
-- [React](https://github.com/barcode-bakery/barcode-typescript/tree/master/examples/react/1d)
-- [NodeJS](https://github.com/barcode-bakery/barcode-typescript/tree/master/examples/nodejs/1d)
+- [React](https://github.com/barcode-bakery/barcode-typescript/tree/master/react)
+- [NodeJS](https://github.com/barcode-bakery/barcode-typescript/tree/master/nodejs)
 
 ## Documentation
 
-You can find an extensive documentation [on the website](https://www.barcodebakery.com/en/docs/nodejs).
+You can find an extensive documentation [on the website](https://www.barcodebakery.com/en/docs/react).
 
-Check out the [Developer's Guide](https://www.barcodebakery.com/en/docs/nodejs/guide/choosing-barcodes) page for a quick overview.
+Check out the [Developer's Guide](https://www.barcodebakery.com/en/docs/react/guide/choosing-barcodes) page for a quick overview.
 
 ## Examples
 
 We have several examples [on the website](https://www.barcodebakery.com). Here is the first one to get you started:
 
+### React
+
+```jsx
+import { BakeryCode128 } from '@barcode-bakery/barcode-react/1d';
+
+export default function Home() {
+  return <BakeryCode128 text="a123" thickness={30} scale={1} />;
+}
+```
+
+This example will display the barcode Code 128 on the page.
+
 ### NodeJS
 
 ```js
-import { BCGcode128 } from '@barcode-bakery/barcode-1d';
-import { BCGDrawing } from '@barcode-bakery/barcode-common';
-import { createSurface, save } from '@barcode-bakery/barcode-node-common';
+import { BCGDrawing, createSurface, save } from '@barcode-bakery/barcode-nodejs';
+import { BCGcode128 } from '@barcode-bakery/barcode-nodejs/1d';
 
 const code = new BCGcode128();
 code.setThickness(30);
@@ -79,18 +90,6 @@ save(drawing, 'image.png', BCGDrawing.ImageFormat.Png);
 ```
 
 This example will save the barcode Code 128 in a file.
-
-### React
-
-```jsx
-import { BakeryCode128 } from '@barcode-bakery/barcode-react-1d';
-
-export default function Home() {
-  return <BakeryCode128 text="a123" thickness={30} scale={1} />;
-}
-```
-
-This example will display the barcode Code 128 on the page.
 
 ### License
 

@@ -10,10 +10,10 @@ This is the common base for generating all barcode types.
 
 Please visit one of the following README:
 
-- [@barcode-bakery/barcode-1d](https://github.com/barcode-bakery/barcode-typescript/tree/master/ts/1d)
-- [@barcode-bakery/barcode-aztec](https://github.com/barcode-bakery/barcode-typescript/tree/master/ts/aztec)
-- [@barcode-bakery/barcode-databarexpanded](https://github.com/barcode-bakery/barcode-typescript/tree/master/ts/databarexpanded)
-- [@barcode-bakery/barcode-datamatrix](https://github.com/barcode-bakery/barcode-typescript/tree/master/ts/datamatrix)
-- [@barcode-bakery/barcode-maxicode](https://github.com/barcode-bakery/barcode-typescript/tree/master/ts/maxicode)
-- [@barcode-bakery/barcode-pdf417](https://github.com/barcode-bakery/barcode-typescript/tree/master/ts/pdf417)
-- [@barcode-bakery/barcode-qrcode](https://github.com/barcode-bakery/barcode-typescript/tree/master/ts/qrcode)
+- [@barcode-bakery/barcode-1d](https://github.com/barcode-bakery/barcode-typescript/tree/master/core/1d)
+- [@barcode-bakery/barcode-aztec](https://github.com/barcode-bakery/barcode-typescript/tree/master/core/aztec)
+- [@barcode-bakery/barcode-databarexpanded](https://github.com/barcode-bakery/barcode-typescript/tree/master/core/databarexpanded)
+- [@barcode-bakery/barcode-datamatrix](https://github.com/barcode-bakery/barcode-typescript/tree/master/core/datamatrix)
+- [@barcode-bakery/barcode-maxicode](https://github.com/barcode-bakery/barcode-typescript/tree/master/core/maxicode)
+- [@barcode-bakery/barcode-pdf417](https://github.com/barcode-bakery/barcode-typescript/tree/master/core/pdf417)
+- [@barcode-bakery/barcode-qrcode](https://github.com/barcode-bakery/barcode-typescript/tree/master/core/qrcode)

@@ -17,10 +17,10 @@ Please consider doing a donation.
 This library is the base to generate barcodes.
 You should consider looking up the README based on the framework where you want to get this installed:
 
-- [React](https://github.com/barcode-bakery/barcode-typescript/tree/master/examples/react/qrcode)
-- [NodeJS](https://github.com/barcode-bakery/barcode-typescript/tree/master/examples/nodejs/qrcode)
+- [React](https://github.com/barcode-bakery/barcode-typescript/tree/master/react)
+- [NodeJS](https://github.com/barcode-bakery/barcode-typescript/tree/master/nodejs)
 
-You can follow our [developer's guide](https://www.barcodebakery.com/en/docs/nodejs/guide) on our website to learn how to use our library.
+You can follow our [developer's guide](https://www.barcodebakery.com/en/docs/react/guide) on our website to learn how to use our library.
 
 ## Tests
 
