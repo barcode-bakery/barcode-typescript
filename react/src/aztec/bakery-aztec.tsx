@@ -2,9 +2,9 @@
 
 import { BCGaztec } from '@barcode-bakery/barcode-aztec';
 import { useCanvasDisplay } from '../common/canvas-hook';
-import { Barcode2DProps } from '../common/models/barcode-2d-props';
+import { BakeryBarcode2DProps } from '../common/models/barcode-2d-props';
 
-export interface BCGaztecProps extends Barcode2DProps {
+export interface BakeryAztecProps extends BakeryBarcode2DProps {
   errorLevel?: number;
   size?: BCGaztec.Size;
   tilde?: boolean;
@@ -23,7 +23,7 @@ export function BakeryAztec({
   tilde,
   rune,
   text
-}: Readonly<BCGaztecProps>) {
+}: Readonly<BakeryAztecProps>) {
   const { component } = useCanvasDisplay(
     BCGaztec,
     code => {
@@ -70,3 +70,5 @@ export function BakeryAztec({
 
   return component;
 }
+
+BakeryAztec.Size = BCGaztec.Size;

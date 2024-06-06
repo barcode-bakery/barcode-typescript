@@ -2,9 +2,9 @@
 
 import { BCGdatabarexpanded } from '@barcode-bakery/barcode-databarexpanded';
 import { useCanvasDisplay } from '../common/canvas-hook';
-import { Barcode1DProps } from '../common/models/barcode-1d-props';
+import { BakeryBarcode1DProps } from '../common/models/barcode-1d-props';
 
-export interface BCGdatabarexpandedProps extends Barcode1DProps {
+export interface BakeryDatabarexpandedProps extends BakeryBarcode1DProps {
   linkageFlag?: boolean;
   stacked?: number;
   text: string;
@@ -19,7 +19,7 @@ export function BakeryDatabarexpanded({
   linkageFlag,
   stacked,
   text
-}: Readonly<BCGdatabarexpandedProps>) {
+}: Readonly<BakeryDatabarexpandedProps>) {
   const { component } = useCanvasDisplay(
     BCGdatabarexpanded,
     code => {

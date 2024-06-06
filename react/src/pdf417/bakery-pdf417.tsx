@@ -2,9 +2,9 @@
 
 import { BCGpdf417 } from '@barcode-bakery/barcode-pdf417';
 import { useCanvasDisplay } from '../common/canvas-hook';
-import { Barcode2DProps } from '../common/models/barcode-2d-props';
+import { BakeryBarcode2DProps } from '../common/models/barcode-2d-props';
 
-export interface BCGpdf417Props extends Barcode2DProps {
+export interface BakeryPdf417Props extends BakeryBarcode2DProps {
   quietZone?: boolean;
   compact?: boolean;
   column?: number | string;
@@ -25,7 +25,7 @@ export function BakeryPdf417({
   errorLevel,
   ratio,
   text
-}: Readonly<BCGpdf417Props>) {
+}: Readonly<BakeryPdf417Props>) {
   const { component } = useCanvasDisplay(
     BCGpdf417,
     code => {

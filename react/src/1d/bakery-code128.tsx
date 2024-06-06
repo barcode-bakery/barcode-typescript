@@ -1,13 +1,14 @@
 'use client';
 
 import { BCGcode128 } from '@barcode-bakery/barcode-1d';
+import { BCGDataInput } from '@barcode-bakery/barcode-common';
 import { useCanvasDisplay } from '../common/canvas-hook';
-import { Barcode1DProps } from '../common/models/barcode-1d-props';
+import { BakeryBarcode1DProps } from '../common/models/barcode-1d-props';
 
-export interface BCGcode128Props extends Barcode1DProps {
+export interface BakeryCode128Props extends BakeryBarcode1DProps {
   start?: 'A' | 'B' | 'C' | null;
   tilde?: boolean;
-  text: string;
+  text: BCGDataInput<BCGcode128.Code> | BCGDataInput<BCGcode128.Code>[] | string;
 }
 
 export function BakeryCode128({
@@ -23,7 +24,7 @@ export function BakeryCode128({
   start,
   tilde,
   text
-}: Readonly<BCGcode128Props>) {
+}: Readonly<BakeryCode128Props>) {
   const { component } = useCanvasDisplay(
     BCGcode128,
     code => {
@@ -78,3 +79,5 @@ export function BakeryCode128({
 
   return component;
 }
+
+BakeryCode128.Code = BCGcode128.Code;

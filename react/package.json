@@ -1,6 +1,6 @@
 {
   "name": "@barcode-bakery/barcode-react",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Generates barcodes for React.",
   "type": "module",
   "repository": {
@@ -23,6 +23,11 @@
     "/dist"
   ],
   "exports": {
+    ".": {
+      "import": "./dist/common.js",
+      "require": "./dist/common.cjs",
+      "types": "./dist/common/index.d.ts"
+    },
     "./1d": {
       "import": "./dist/1d.js",
       "require": "./dist/1d.cjs",

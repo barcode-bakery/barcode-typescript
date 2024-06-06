@@ -2,9 +2,9 @@
 
 import { BCGean13 } from '@barcode-bakery/barcode-1d';
 import { useCanvasDisplay } from '../common/canvas-hook';
-import { Barcode1DProps } from '../common/models/barcode-1d-props';
+import { BakeryBarcode1DProps } from '../common/models/barcode-1d-props';
 
-export interface BCGean13Props extends Barcode1DProps {
+export interface BakeryEan13Props extends BakeryBarcode1DProps {
   text: string;
 }
 
@@ -19,7 +19,7 @@ export function BakeryEan13({
   font,
   displayChecksum,
   text
-}: Readonly<BCGean13Props>) {
+}: Readonly<BakeryEan13Props>) {
   const { component } = useCanvasDisplay(
     BCGean13,
     code => {

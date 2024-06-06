@@ -2,12 +2,11 @@
 
 import { BCGdatamatrix } from '@barcode-bakery/barcode-datamatrix';
 import { useCanvasDisplay } from '../common/canvas-hook';
-import { Barcode2DProps } from '../common/models/barcode-2d-props';
+import { BakeryBarcode2DProps } from '../common/models/barcode-2d-props';
 
-export interface BCGdatamatrixProps extends Barcode2DProps {
+export interface BakeryDatamatrixProps extends BakeryBarcode2DProps {
   size?: BCGdatamatrix.Size;
-  datamatrixSizeRow?: number;
-  datamatrixSizeCol?: number;
+  datamatrixSize?: [number, number];
   quietZone?: number;
   tilde?: boolean;
   acceptECI?: boolean;
@@ -24,8 +23,7 @@ export function BakeryDatamatrix({
   offsetX,
   offsetY,
   size,
-  datamatrixSizeRow,
-  datamatrixSizeCol,
+  datamatrixSize,
   quietZone,
   tilde,
   acceptECI,
@@ -33,7 +31,7 @@ export function BakeryDatamatrix({
   encoding,
   macro,
   text
-}: Readonly<BCGdatamatrixProps>) {
+}: Readonly<BakeryDatamatrixProps>) {
   const { component } = useCanvasDisplay(
     BCGdatamatrix,
     code => {
@@ -61,8 +59,8 @@ export function BakeryDatamatrix({
         code.setSize(size);
       }
 
-      if (datamatrixSizeRow !== undefined && datamatrixSizeCol !== undefined) {
-        code.setDataMatrixSize(datamatrixSizeRow, datamatrixSizeCol);
+      if (datamatrixSize !== undefined) {
+        code.setDataMatrixSize(datamatrixSize[0], datamatrixSize[1]);
       }
 
       if (quietZone !== undefined) {
@@ -98,8 +96,7 @@ export function BakeryDatamatrix({
       offsetX,
       offsetY,
       size,
-      datamatrixSizeRow,
-      datamatrixSizeCol,
+      datamatrixSize,
       quietZone,
       tilde,
       acceptECI,
@@ -112,3 +109,8 @@ export function BakeryDatamatrix({
 
   return component;
 }
+
+BakeryDatamatrix.Size = BCGdatamatrix.Size;
+BakeryDatamatrix.Encoding = BCGdatamatrix.Encoding;
+BakeryDatamatrix.Fnc1 = BCGdatamatrix.Fnc1;
+BakeryDatamatrix.Macro = BCGdatamatrix.Macro;

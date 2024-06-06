@@ -69,10 +69,10 @@
   dependencies:
     "@barcode-bakery/barcode-common" "^3"
 
-"@barcode-bakery/barcode-react@^1.0.0-alpha.1":
-  version "1.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@barcode-bakery/barcode-react/-/barcode-react-1.0.0-alpha.1.tgz#00ae39f7de882e92283261e65f30927ea68b332b"
-  integrity sha512-N1bW94Lvvrkl66kvb+vMovtFxwySkew6ZZV0LvGv3qO5wIevTU1gHMIO84P60ZJElO4gm3N79uMbbUQBZLtVCg==
+"@barcode-bakery/barcode-react@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@barcode-bakery/barcode-react/-/barcode-react-1.0.2.tgz#10463df0c549f9f03deba0c9cc566d2d4d23bfe9"
+  integrity sha512-Si1CGGVesTfGDw+UavDuQ632ypxyQXbC/P6PQS7vbG6EFxFLzAA+xsNAhGguDOIc4mXABxDD8DHGzaOrheq5oA==
   dependencies:
     "@barcode-bakery/barcode-1d" "^3"
     "@barcode-bakery/barcode-aztec" "^2"

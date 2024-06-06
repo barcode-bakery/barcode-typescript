@@ -1,7 +1,7 @@
 import { BCGFont } from '@barcode-bakery/barcode-common';
-import { BarcodeProps } from './barcode-props';
+import { BakeryBarcodeProps } from './barcode-props';
 
-export interface Barcode1DProps extends BarcodeProps {
+export interface BakeryBarcode1DProps extends BakeryBarcodeProps {
   thickness?: number | string;
   label?: string;
   font?: BCGFont;

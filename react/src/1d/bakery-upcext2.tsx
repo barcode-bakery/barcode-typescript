@@ -2,9 +2,9 @@
 
 import { BCGupcext2 } from '@barcode-bakery/barcode-1d';
 import { useCanvasDisplay } from '../common/canvas-hook';
-import { Barcode1DProps } from '../common/models/barcode-1d-props';
+import { BakeryBarcode1DProps } from '../common/models/barcode-1d-props';
 
-export interface BCGupcext2Props extends Barcode1DProps {
+export interface BakeryUpcext2Props extends BakeryBarcode1DProps {
   text: string;
 }
 
@@ -19,7 +19,7 @@ export function BakeryUpcext2({
   font,
   displayChecksum,
   text
-}: Readonly<BCGupcext2Props>) {
+}: Readonly<BakeryUpcext2Props>) {
   const { component } = useCanvasDisplay(
     BCGupcext2,
     code => {

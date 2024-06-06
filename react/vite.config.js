@@ -8,6 +8,7 @@ export default {
     manifest: true,
     lib: {
       entry: {
+        common: resolve(__dirname, 'src/common/index.ts'),
         '1d': resolve(__dirname, 'src/1d/index.ts'),
         aztec: resolve(__dirname, 'src/aztec/index.ts'),
         databarexpanded: resolve(__dirname, 'src/databarexpanded/index.ts'),

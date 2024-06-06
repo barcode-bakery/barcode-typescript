@@ -2,9 +2,9 @@
 
 import { BCGcode39 } from '@barcode-bakery/barcode-1d';
 import { useCanvasDisplay } from '../common/canvas-hook';
-import { Barcode1DProps } from '../common/models/barcode-1d-props';
+import { BakeryBarcode1DProps } from '../common/models/barcode-1d-props';
 
-export interface BCGcode39Props extends Barcode1DProps {
+export interface BakeryCode39Props extends BakeryBarcode1DProps {
   checksum?: boolean;
   text: string;
 }
@@ -21,7 +21,7 @@ export function BakeryCode39({
   displayChecksum,
   checksum,
   text
-}: Readonly<BCGcode39Props>) {
+}: Readonly<BakeryCode39Props>) {
   const { component } = useCanvasDisplay(
     BCGcode39,
     code => {

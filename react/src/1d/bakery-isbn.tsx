@@ -2,9 +2,9 @@
 
 import { BCGisbn } from '@barcode-bakery/barcode-1d';
 import { useCanvasDisplay } from '../common/canvas-hook';
-import { Barcode1DProps } from '../common/models/barcode-1d-props';
+import { BakeryBarcode1DProps } from '../common/models/barcode-1d-props';
 
-export interface BCGisbnProps extends Barcode1DProps {
+export interface BakeryIsbnProps extends BakeryBarcode1DProps {
   gs1?: BCGisbn.GS1;
   text: string;
 }
@@ -21,7 +21,7 @@ export function BakeryIsbn({
   displayChecksum,
   gs1,
   text
-}: Readonly<BCGisbnProps>) {
+}: Readonly<BakeryIsbnProps>) {
   const { component } = useCanvasDisplay(
     BCGisbn,
     code => {
@@ -72,3 +72,5 @@ export function BakeryIsbn({
 
   return component;
 }
+
+BakeryIsbn.GS1 = BCGisbn.GS1;

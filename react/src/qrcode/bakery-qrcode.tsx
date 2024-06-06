@@ -2,9 +2,9 @@
 
 import { BCGqrcode } from '@barcode-bakery/barcode-qrcode';
 import { useCanvasDisplay } from '../common/canvas-hook';
-import { Barcode2DProps } from '../common/models/barcode-2d-props';
+import { BakeryBarcode2DProps } from '../common/models/barcode-2d-props';
 
-export interface BCGqrcodeProps extends Barcode2DProps {
+export interface BakeryQrcodeProps extends BakeryBarcode2DProps {
   errorLevel?: string;
   size?: number;
   fnc1?: number;
@@ -13,8 +13,7 @@ export interface BCGqrcodeProps extends Barcode2DProps {
   quietZone?: boolean;
   mirror?: boolean;
   mask?: number;
-  qrSize?: number;
-  qrMicro?: boolean;
+  qrSize?: [number, boolean?];
   text: string;
 }
 
@@ -33,9 +32,8 @@ export function BakeryQrcode({
   mirror,
   mask,
   qrSize,
-  qrMicro,
   text
-}: Readonly<BCGqrcodeProps>) {
+}: Readonly<BakeryQrcodeProps>) {
   const { component } = useCanvasDisplay(
     BCGqrcode,
     code => {
@@ -84,7 +82,7 @@ export function BakeryQrcode({
       }
 
       if (qrSize !== undefined) {
-        code.setQRSize(qrSize, qrMicro ?? false);
+        code.setQRSize(qrSize[0], qrSize[1] ?? false);
       }
 
       code.parse(text);
@@ -104,10 +102,12 @@ export function BakeryQrcode({
       mirror,
       mask,
       qrSize,
-      qrMicro,
       text
     ]
   );
 
   return component;
 }
+
+BakeryQrcode.Size = BCGqrcode.Size;
+BakeryQrcode.Fnc1 = BCGqrcode.Fnc1;

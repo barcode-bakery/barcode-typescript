@@ -20,6 +20,7 @@ import {
   BakeryUpcext2,
   BakeryUpcext5
 } from '@barcode-bakery/barcode-react/1d';
+import { BakeryFont } from '@barcode-bakery/barcode-react';
 import { useState } from 'react';
 
 export default function Home() {

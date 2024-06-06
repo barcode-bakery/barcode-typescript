@@ -2,9 +2,9 @@
 
 import { BCGmaxicode } from '@barcode-bakery/barcode-maxicode';
 import { useCanvasDisplay } from '../common/canvas-hook';
-import { Barcode2DProps } from '../common/models/barcode-2d-props';
+import { BakeryBarcode2DProps } from '../common/models/barcode-2d-props';
 
-export interface BCGmaxicodeProps extends Barcode2DProps {
+export interface BakeryMaxicodeProps extends BakeryBarcode2DProps {
   quietZone?: boolean;
   mode?: number;
   acceptECI?: boolean;
@@ -21,7 +21,7 @@ export function BakeryMaxicode({
   mode,
   acceptECI,
   text
-}: Readonly<BCGmaxicodeProps>) {
+}: Readonly<BakeryMaxicodeProps>) {
   const { component } = useCanvasDisplay(
     BCGmaxicode,
     code => {

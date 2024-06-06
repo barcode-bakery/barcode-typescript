@@ -1,6 +1,6 @@
-import { BarcodeProps } from './barcode-props';
+import { BakeryBarcodeProps } from './barcode-props';
 
-export interface Barcode2DProps extends BarcodeProps {
+export interface BakeryBarcode2DProps extends BakeryBarcodeProps {
   scaleX?: number | string;
   scaleY?: number | string;
 }

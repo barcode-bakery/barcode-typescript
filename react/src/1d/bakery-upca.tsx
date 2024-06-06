@@ -2,9 +2,9 @@
 
 import { BCGupca } from '@barcode-bakery/barcode-1d';
 import { useCanvasDisplay } from '../common/canvas-hook';
-import { BCGean13Props } from './bakery-ean13';
+import { BakeryEan13Props } from './bakery-ean13';
 
-export interface BCGupcaProps extends BCGean13Props {
+export interface BakeryUpcaProps extends BakeryEan13Props {
   text: string;
 }
 
@@ -19,7 +19,7 @@ export function BakeryUpca({
   font,
   displayChecksum,
   text
-}: Readonly<BCGupcaProps>) {
+}: Readonly<BakeryUpcaProps>) {
   const { component } = useCanvasDisplay(
     BCGupca,
     code => {

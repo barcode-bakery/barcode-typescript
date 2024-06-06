@@ -1,6 +1,6 @@
 import { BCGColor } from '@barcode-bakery/barcode-common';
 
-export interface BarcodeProps {
+export interface BakeryBarcodeProps {
   scale?: number;
   foregroundColor?: BCGColor;
   backgroundColor?: BCGColor;
