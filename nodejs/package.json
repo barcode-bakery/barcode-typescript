@@ -1,7 +1,7 @@
 {
   "name": "@barcode-bakery/barcode-nodejs",
   "version": "1.0.0",
-  "description": "Base code for generating barcode with the Barcode Bakery library with Node. See barcode-bakery-1d.",
+  "description": "Generates barcodes for React.",
   "type": "module",
   "repository": {
     "type": "git",
