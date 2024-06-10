@@ -4,127 +4,53 @@
     <img src="https://www.barcodebakery.com/images/BCG-Logo-SQ-GitHub.svg">
 </a></p>
 
-This repository allows you to generate 1D and 2D barcodes in React. You can find more information on our [Barcode Bakery website](https://www.barcodebakery.com).
+[Barcode Bakery](https://www.barcodebakery.com) is a library written in TypeScript, [.NET Standard](https://github.com/barcode-bakery/barcode-dotnet-1d/) and [PHP](https://github.com/barcode-bakery/barcode-php-1d/) which allows you to generate barcodes on the fly on your server for displaying or saving or directly on the client.
+
+The library has minimal dependencies in each language in order to be supported on a wide variety of platform.
 
 The TypeScript library is under the [Creative Commons Attribution-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nd/4.0/deed.en).
 
-Please consider doing a donation.
+Please consider doing a <a href="https://github.com/sponsors/barcode-bakery">donation</a>.
 
 ## Installation
 
-- Run the following command:
+This library is the base to generate barcodes.
+You should consider looking up the README based on the framework where you want to get this installed:
 
-```bash
-$ npm install @barcode-bakery/barcode-react
-```
-
-or
-
-```bash
-$ yarn add @barcode-bakery/barcode-react
-```
+- [React](https://github.com/barcode-bakery/barcode-typescript/tree/master/react)
+- [NodeJS](https://github.com/barcode-bakery/barcode-typescript/tree/master/nodejs)
 
 You can follow our [developer's guide](https://www.barcodebakery.com/en/docs/react/guide) on our website to learn how to use our library.
 
-## Example
+## Tests
 
-### 1D Barcode
-
-```jsx
-import { BakeryCode128 } from '@barcode-bakery/barcode-react/1d';
-
-export default function Home() {
-  return <BakeryCode128 text="a123" thickness={30} scale={1} />;
-}
-```
-
-### Aztec
-
-```jsx
-import { BakeryAztec } from '@barcode-bakery/barcode-react/aztec';
-
-export default function Home() {
-  return <BakeryAztec text="Aztec" scale={1} />;
-}
-```
-
-### Databar Expanded
-
-```jsx
-import { BakeryDatabarexpanded } from '@barcode-bakery/barcode-react/databarexpanded';
-
-export default function Home() {
-  return <BakeryDatabarexpanded text="01900123456789083103001750" scale={1} />;
-}
-```
-
-### DataMatrix
-
-```jsx
-import { BakeryDatamatrix } from '@barcode-bakery/barcode-react/datamatrix';
-
-export default function Home() {
-  return <BakeryDatamatrix text="DataMatrix" scale={1} />;
-}
-```
-
-### MaxiCode
-
-```jsx
-import { BakeryMaxicode } from '@barcode-bakery/barcode-react/maxicode';
-
-export default function Home() {
-  return <BakeryMaxicode text="MaxiCode" scale={1} />;
-}
-```
-
-### PDF417
-
-```jsx
-import { BakeryPdf417 } from '@barcode-bakery/barcode-react/pdf417';
-
-export default function Home() {
-  return <BakeryPdf417 text="PDF417" scale={1} />;
-}
-```
-
-### QRCode
-
-```jsx
-import { BakeryQrcode } from '@barcode-bakery/barcode-react/qrcode';
-
-export default function Home() {
-  return <BakeryQrcode text="QRCode" scale={1} />;
-}
-```
+Simply type `yarn test` to run the tests.
 
 ## Supported types
 
-### 1D
+- QRCode ([React](https://www.barcodebakery.com/en/docs/react/barcode/qrcode/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/qrcode/api))
 
-- [Codabar](https://www.barcodebakery.com/en/docs/react/barcode/codabar/api)
-- [Code 11](https://www.barcodebakery.com/en/docs/react/barcode/code11/api)
-- [Code 128](https://www.barcodebakery.com/en/docs/react/barcode/code128/api)
-- [Code 39](https://www.barcodebakery.com/en/docs/react/barcode/code39/api)
-- [Code 39 Extended](https://www.barcodebakery.com/en/docs/react/barcode/code39extended/api)
-- [Code 93](https://www.barcodebakery.com/en/docs/react/barcode/code93/api)
-- [EAN-13](https://www.barcodebakery.com/en/docs/react/barcode/ean13/api)
-- [EAN-8](https://www.barcodebakery.com/en/docs/react/barcode/ean8/api)
-- [Interleaved 2 of 5](https://www.barcodebakery.com/en/docs/react/barcode/i25/api)
-- [ISBN-10 / ISBN-13](https://www.barcodebakery.com/en/docs/react/barcode/isbn/api)
-- [MSI Plessey](https://www.barcodebakery.com/en/docs/react/barcode/msi/api)
-- [Other (Custom)](https://www.barcodebakery.com/en/docs/react/barcode/othercode/api)
-- [Standard 2 of 5](https://www.barcodebakery.com/en/docs/react/barcode/s25/api)
-- [UPC-A](https://www.barcodebakery.com/en/docs/react/barcode/upca/api)
-- [UPC-E](https://www.barcodebakery.com/en/docs/react/barcode/upce/api)
-- [UPC Extension 2](https://www.barcodebakery.com/en/docs/react/barcode/upcext2/api)
-- [UPC Extension 5](https://www.barcodebakery.com/en/docs/react/barcode/upcext5/api)
+## Other libraries available
 
-### 2D
-
-- [Aztec](https://www.barcodebakery.com/en/docs/react/barcode/aztec/api)
-- [Databar Expanded](https://www.barcodebakery.com/en/docs/react/barcode/databarexpanded/api)
-- [DataMatrix](https://www.barcodebakery.com/en/docs/react/barcode/datamatrix/api)
-- [MaxiCode](https://www.barcodebakery.com/en/docs/react/barcode/maxicode/api)
-- [PDF417](https://www.barcodebakery.com/en/docs/react/barcode/pdf417/api)
-- [QRCode](https://www.barcodebakery.com/en/docs/react/barcode/qrcode/api)
+- Codabar ([React](https://www.barcodebakery.com/en/docs/react/barcode/codabar/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/codabar/api))
+- Code 11 ([React](https://www.barcodebakery.com/en/docs/react/barcode/code11/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/code11/api))
+- Code 128 ([React](https://www.barcodebakery.com/en/docs/react/barcode/code128/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/code128/api))
+- Code 39 ([React](https://www.barcodebakery.com/en/docs/react/barcode/code39/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/code39/api))
+- Code 39 Extended ([React](https://www.barcodebakery.com/en/docs/react/barcode/code39extended/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/code39extended/api))
+- Code 93 ([React](https://www.barcodebakery.com/en/docs/react/barcode/code93/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/code93/api))
+- EAN-13 ([React](https://www.barcodebakery.com/en/docs/react/barcode/ean13/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/ean13/api))
+- EAN-8 ([React](https://www.barcodebakery.com/en/docs/react/barcode/ean8/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/ean8/api))
+- Interleaved 2 of 5 ([React](https://www.barcodebakery.com/en/docs/react/barcode/i25/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/i25/api))
+- ISBN-10 / ISBN-13 ([React](https://www.barcodebakery.com/en/docs/react/barcode/isbn/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/isbn/api))
+- MSI Plessey ([React](https://www.barcodebakery.com/en/docs/react/barcode/msi/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/msi/api))
+- Other (Custom) ([React](https://www.barcodebakery.com/en/docs/react/barcode/othercode/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/othercode/api))
+- Standard 2 of 5 ([React](https://www.barcodebakery.com/en/docs/react/barcode/s25/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/s25/api))
+- UPC-A ([React](https://www.barcodebakery.com/en/docs/react/barcode/upca/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/upca/api))
+- UPC-E ([React](https://www.barcodebakery.com/en/docs/react/barcode/upce/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/upce/api))
+- UPC Extension 2 ([React](https://www.barcodebakery.com/en/docs/react/barcode/upcext2/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/upcext2/api))
+- UPC Extension 5 ([React](https://www.barcodebakery.com/en/docs/react/barcode/upcext5/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/upcext5/api))
+- Aztec ([React](https://www.barcodebakery.com/en/docs/react/barcode/aztec/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/aztec/api))
+- Databar Expanded ([React](https://www.barcodebakery.com/en/docs/react/barcode/databarexpanded/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/databarexpanded/api))
+- DataMatrix ([React](https://www.barcodebakery.com/en/docs/react/barcode/datamatrix/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/datamatrix/api))
+- MaxiCode ([React](https://www.barcodebakery.com/en/docs/react/barcode/maxicode/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/maxicode/api))
+- PDF417 ([React](https://www.barcodebakery.com/en/docs/react/barcode/pdf417/api), [NodeJS](https://www.barcodebakery.com/en/docs/nodejs/barcode/pdf417/api))

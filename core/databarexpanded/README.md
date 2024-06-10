@@ -10,7 +10,7 @@ The library has minimal dependencies in each language in order to be supported o
 
 The TypeScript library is under the [Creative Commons Attribution-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nd/4.0/deed.en).
 
-Please consider doing a donation.
+Please consider doing a <a href="https://github.com/sponsors/barcode-bakery">donation</a>.
 
 ## Installation
 
