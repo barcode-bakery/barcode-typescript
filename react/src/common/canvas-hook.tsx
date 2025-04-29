@@ -1,3 +1,5 @@
+'use client';
+
 import { BCGBarcode, BCGDrawing } from '@barcode-bakery/barcode-common';
 import { DependencyList, useEffect, useMemo, useRef, useState } from 'react';
 

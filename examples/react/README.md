@@ -24,6 +24,18 @@ or
 $ yarn add @barcode-bakery/barcode-react
 ```
 
+For React 16-18:
+
+```bash
+$ npm install @barcode-bakery/barcode-react@1
+```
+
+or
+
+```bash
+$ yarn add @barcode-bakery/barcode-react@1
+```
+
 This repository is already setup to run the examples. You simply need to run:
 
 ```bash
