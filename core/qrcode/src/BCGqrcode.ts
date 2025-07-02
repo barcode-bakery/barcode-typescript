@@ -2296,7 +2296,7 @@ class BCGqrcode extends BCGBarcode2D {
           dataDecimal[j] = Utility.bindec(dataBinary[j + i * codePerBlock2 + index]);
         }
 
-        errorCodeDecimal.concat(this.reedSolomon(dataDecimal, codePerBlock2, errorPerBlock));
+        errorCodeDecimal = errorCodeDecimal.concat(this.reedSolomon(dataDecimal, codePerBlock2, errorPerBlock));
       }
     }
 
